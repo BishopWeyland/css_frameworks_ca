@@ -1,5 +1,49 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+}
+
+nav {
+  background-color: #e75555;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav a {
+  color: white;
+}
+nav .navbar {
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  color: white;
+}
+nav img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+nav .profile-active {
+  border: 2px solid white;
+}
+
 body {
-  background-color: #e85a4f;
+  background-color: #e9e9e9;
 }
 
 /*# sourceMappingURL=style.css.map */
