@@ -1,0 +1,8 @@
+@mixin content-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin b-radius-3 {
+  border-radius: 3px;
+}
