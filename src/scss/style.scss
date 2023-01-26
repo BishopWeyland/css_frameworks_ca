@@ -89,9 +89,12 @@ button {
 nav {
   background-color: map-get($colours, primary);
   height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+
+  & .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 
   & a {
     color: white;
@@ -103,11 +106,14 @@ nav {
 
   & .logo {
     font-size: 1.7rem;
-    width: 300px;
   }
 
-  & .search-input {
-    width: 400px;
+  & .search-bar {
+    @include content-center();
+
+    & input {
+      width: 100%;
+    }
   }
 
   & .search-button {
@@ -116,6 +122,7 @@ nav {
   }
 
   & .navbar {
+    justify-content: end;
     align-items: center;
     font-size: 1.5rem;
   }
@@ -126,7 +133,7 @@ nav {
     align-items: center;
 
     & li {
-      margin-right: 50px;
+      margin-left: 50px;
     }
   }
 
