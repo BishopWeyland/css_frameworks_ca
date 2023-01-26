@@ -6,6 +6,20 @@
   box-sizing: border-box;
 }
 
+$font-size: (
+  "big": 40px,
+  "medium": 25px,
+  "small": 18px,
+);
+
+h1 {
+  font-size: map-get($font-size, big);
+}
+
+h2 {
+  font-size: map-get($font-size, medium);
+}
+
 $colours: (
   "primary": #e75555,
   "secondary": #fbfbfb,
@@ -19,6 +33,11 @@ $colours: (
 
 a {
   text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: black;
+  }
 }
 
 ul {
@@ -33,7 +52,16 @@ input {
 
 .btn {
   background-color: map-get($colours, primary);
-  color: white;
+  color: black;
+  font-size: 20px;
+
+  &:hover {
+    background-color: black;
+    color: #ffffff;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border: none;
+  }
 }
 
 button {
@@ -116,6 +144,7 @@ nav {
 
 body {
   background-color: map-get($colours, background);
+  font-size: map-get($font-size, small);
 }
 
 .post-form-container {
@@ -154,6 +183,7 @@ body {
     margin-bottom: 2rem;
     padding: 2rem 0;
     background-color: map-get($colours, secondary);
+    border-radius: 3px;
     @include content-center();
 
     & .post-img {
@@ -186,4 +216,13 @@ body {
 .post-icon {
   color: map-get($colours, primary);
   font-size: 2rem;
+}
+
+.footer {
+  @include content-center();
+
+  & span {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
 }

@@ -6,8 +6,20 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
 a {
   text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: black;
 }
 
 ul {
@@ -22,7 +34,15 @@ input {
 
 .btn {
   background-color: #e75555;
-  color: white;
+  color: black;
+  font-size: 20px;
+}
+.btn:hover {
+  background-color: black;
+  color: #ffffff;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  border: none;
 }
 
 button {
@@ -95,6 +115,7 @@ nav .profile-active {
 
 body {
   background-color: #e9e9e9;
+  font-size: 18px;
 }
 
 .post-form-container {
@@ -131,6 +152,7 @@ body {
   margin-bottom: 2rem;
   padding: 2rem 0;
   background-color: #fbfbfb;
+  border-radius: 3px;
   display: flex;
   justify-content: center;
 }
@@ -161,6 +183,15 @@ body {
 .post-icon {
   color: #e75555;
   font-size: 2rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.footer span {
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
