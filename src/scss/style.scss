@@ -234,3 +234,48 @@ body {
     margin-bottom: 10px;
   }
 }
+
+// sign-in-page
+
+.sign-in-container {
+  background-color: map-get($colours, secondary);
+
+  & h1 {
+    font-size: map-get($font-size, medium);
+  }
+
+  & .form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & form {
+      display: flex;
+      flex-direction: column;
+
+      & input {
+        margin-bottom: 2rem;
+      }
+    }
+
+    & a {
+      display: flex;
+      justify-content: center;
+      text-decoration: underline 2px;
+      margin-bottom: 3rem;
+    }
+
+    & button {
+      color: white;
+      background-color: black;
+      margin-bottom: 20px;
+
+      &:hover {
+        background-color: map-get($colours, background);
+        color: black;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        border: none;
+      }
+    }
+  }
+}
