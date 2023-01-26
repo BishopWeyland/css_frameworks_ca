@@ -89,6 +89,7 @@ button {
 nav {
   background-color: map-get($colours, primary);
   height: 4rem;
+  padding-top: 5px;
 
   & .nav {
     display: flex;

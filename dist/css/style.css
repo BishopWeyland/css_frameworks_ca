@@ -70,6 +70,7 @@ button {
 nav {
   background-color: #e75555;
   height: 4rem;
+  padding-top: 5px;
 }
 nav .nav {
   display: flex;
