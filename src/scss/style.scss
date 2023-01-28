@@ -275,3 +275,19 @@ body {
     }
   }
 }
+
+@media (max-width: 767px) {
+  .logo {
+    & span {
+      display: none;
+    }
+  }
+
+  .search-input {
+    display: none;
+  }
+
+  .search-button {
+    display: none;
+  }
+}
