@@ -98,6 +98,7 @@ nav .navbar-nav {
   flex-direction: row;
   color: white;
   align-items: center;
+  justify-content: flex-end;
 }
 nav .navbar-nav li {
   margin-left: 50px;
