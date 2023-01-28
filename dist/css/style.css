@@ -76,46 +76,30 @@ nav {
   height: 4rem;
   padding-top: 5px;
 }
-nav .nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-nav a {
-  color: white;
-}
-nav a:hover {
+nav i {
   color: white;
 }
 nav .logo i {
   font-size: 3rem;
 }
 nav .logo {
+  color: white;
   font-size: 1.7rem;
-}
-nav .search-bar {
-  display: flex;
-  justify-content: center;
-}
-nav .search-bar input {
-  width: 100%;
 }
 nav .search-button {
   position: relative;
   right: 2rem;
 }
-nav .nav-menu {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  font-size: 1.5rem;
+nav .search-button i {
+  color: black;
 }
-nav ul {
+nav .navbar-nav {
   display: flex;
+  flex-direction: row;
   color: white;
   align-items: center;
 }
-nav ul li {
+nav .navbar-nav li {
   margin-left: 50px;
 }
 nav img {
@@ -123,9 +107,6 @@ nav img {
   width: 40px;
   object-fit: cover;
   border-radius: 50%;
-}
-nav .profile-active {
-  border: 2px solid white;
 }
 
 body {
