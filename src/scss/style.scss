@@ -134,16 +134,14 @@ img {
   width: 100%;
 }
 
+.scroll-inner {
+  display: flex;
+  flex-direction: column;
+}
+
 .scroll-contact {
   overflow-y: scroll;
   max-height: 1050px;
-}
-
-@media min-width(600px) {
-}
-
-.scroll-inner {
-  height: 100%;
 }
 
 @media (max-width: 767px) {
@@ -152,7 +150,7 @@ img {
     flex-direction: column-reverse;
   }
 
-  .scroll-contact {
+  .scroll-inner {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
