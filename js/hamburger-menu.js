@@ -5,9 +5,9 @@
 //   menu.classList.toggle("menu-show");
 // });
 
-const menuBtn = document.querySelector(".navbar-toggler");
-const collapsableMenu = document.querySelector(".navbar-collapse");
+// const menuBtn = document.querySelector(".navbar-toggler");
+// const collapsableMenu = document.querySelector(".navbar-collapse");
 
-menuBtn.addEventListener("click", () => {
-  collapsableMenu.classList.toggle("collapse");
-});
+// menuBtn.addEventListener("click", () => {
+//   collapsableMenu.classList.toggle("collapse");
+// });

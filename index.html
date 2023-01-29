@@ -14,61 +14,12 @@
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="dist/css/style.css" />
-    
   </head>
   <body>
-    <!-- <nav class="navbar">
-      <div class="container-fluid">
-        <div class="col-4">
-          <a class="navbar-brand logo" href="index.html">
-            <i class="fa-regular fa-note-sticky"></i> <span>Page.</span>
-          </a>
-        </div>
-        <button class="burger-menu"><i class="fa-solid fa-bars"></i></button>
-
-        <div class="col-4">
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2 search-input input-gradient"
-              type="search"
-              placeholder="Search"
-            />
-            <button class="search-button" type="submit">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </form>
-        </div>
-
-        <div class="col-4">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="fa-regular fa-comments"></i>
-              </a>
-            </li>
-            <li class="nav-item ms-5">
-              <a href="#" class="nav-link">
-                <i class="fa-regular fa-bell"></i>
-              </a>
-            </li>
-            <li class="nav-item ms-5">
-              <a href="sign-in.html" class="nav-link"
-                ><img src="images/pexels-pixabay-220453.jpg"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
-
+    <!--Navbar-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-      
-          <a class="navbar-brand" href="index.html">
-            <i class="fa-regular fa-note-sticky"></i> <span>Page.</span></a
-          >
-       
-
+        <a class="navbar-brand" href="#">Navbar</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -80,237 +31,89 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse"
-          id="navbarSupportedContent"
-        >
-        
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          
-          
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item me-4">
-                <a class="nav-link" href="#"
-                  ><i class="fa-regular fa-comments"></i
-                  ><span class="mobile-menu">Chat</span></a
-                >
-              </li>
-              <li class="nav-item me-4">
-                <a class="nav-link" href="#"
-                  ><i class="fa-regular fa-bell"></i
-                  ><span class="mobile-menu">Alerts</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="sign-in.html"
-                >
-                  <img src="images/pexels-pixabay-220453.jpg"
-                /><span class="mobile-menu">Stefan Stafford</span></a</a>
-              </li>
-            </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
         </div>
       </div>
     </nav>
 
-    <main>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 p-0 post-form-container">
-            <img src="images/pexels-pixabay-220453.jpg" />
-            <div class="post-input">
+    <!--Main content-->
+    <main class="container">
+      <div class="row justify-content-center">
+        <div class="col-3">
+          <form>
+            <div class="mb-3">
               <input
-                class="input-gradient"
+                aria-label="Post content"
+                placeholder="What are you thinking about?"
                 type="text"
-                placeholder="What are you thinking?"
+                class="form-control"
+                id="postContent"
               />
-              <input type="submit" class="btn" value="Post" />
             </div>
-            <button><i class="fa-regular fa-image"></i></button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+      <h1>Feed</h1>
+      <div class="row post-container p-3 justify-content-center">
+        <div class="col-8 content-post">
+          <div class="author d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <a href="#">
+                <img
+                  src="./images/pexels-creation-hill-1681010.jpg"
+                  class="profile-img me-3"
+                  alt="Profile picture of a man with a red jacket."
+              /></a>
+              <h3 class="d-block">Per Hansen</h3>
+            </div>
+            <h3 class="d-block">23.01.2023</h3>
           </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 p-0"><h1>Feed</h1></div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row feed">
-          <div class="col-12 post-container">
-            <div class="col-8 post">
-              <div class="post-info">
-                <div class="post-profile">
-                  <a href="#">
-                    <img src="/images/pexels-creation-hill-1681010.jpg" />
-                    <h2>Chrysanthos Milo</h2>
-                  </a>
-                </div>
-                <div class="post-date"><span>21.04.23</span></div>
-              </div>
-
-              <img
-                class="post-img"
-                src="/images/pexels-robin-stickel-70497.jpg"
-              />
-              <p>They really have the best burgers at The Loop cafe!🍔🍻</p>
-              <div class="row">
-                <div class="col-2">
-                  <button class="favourite post-icon">
-                    <i class="fa-regular fa-heart"></i>
-                  </button>
-                </div>
-                <div class="col-2">
-                  <button class="Comment post-icon">
-                    <i class="fa-regular fa-comment"></i>
-                  </button>
-                </div>
-                <div class="col-2">
-                  <button class="Share post-icon">
-                    <i class="fa-solid fa-share-nodes"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- post 2 -->
-      <div class="container">
-        <div class="row feed">
-          <div class="col-12 post-container">
-            <div class="col-8 post">
-              <div class="post-info">
-                <div class="post-profile">
-                  <a href="#">
-                    <img src="/images/pexels-maksim-goncharenok-4775198.jpg" />
-                    <h2>Peigi Elna</h2>
-                  </a>
-                </div>
-                <div class="post-date"><span>01.01.23</span></div>
-              </div>
-              <p>
-                Happy new year everybody! Can't wait for a new year and a new
-                me!🧘‍♀️💜
-              </p>
-              <div class="row">
-                <div class="col-2">
-                  <button class="favourite post-icon">
-                    <i class="fa-regular fa-heart"></i>
-                  </button>
-                </div>
-                <div class="col-2">
-                  <button class="Comment post-icon">
-                    <i class="fa-regular fa-comment"></i>
-                  </button>
-                </div>
-                <div class="col-2">
-                  <button class="Share post-icon">
-                    <i class="fa-solid fa-share-nodes"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- post 3 -->
-      <div class="container">
-        <div class="row feed">
-          <div class="col-12 post-container">
-            <div class="col-8 post">
-              <div class="post-info">
-                <div class="post-profile">
-                  <a href="#">
-                    <img src="/images/pexels-spring-toan-4075524.jpg" />
-                    <h2>Tsetsiliya Kala</h2>
-                  </a>
-                </div>
-                <div class="post-date"><span>11.02.23</span></div>
-              </div>
-
-              <img class="post-img" src="/images/pexels-pixabay-462023.jpg" />
-              <div class="row">
-                <div class="col-2">
-                  <button class="favourite post-icon">
-                    <i class="fa-regular fa-heart"></i>
-                  </button>
-                </div>
-                <div class="col-2">
-                  <button class="Comment post-icon">
-                    <i class="fa-regular fa-comment"></i>
-                  </button>
-                </div>
-                <div class="col-2">
-                  <button class="Share post-icon">
-                    <i class="fa-solid fa-share-nodes"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- post 4 -->
-      <div class="container">
-        <div class="row feed">
-          <div class="col-12 post-container">
-            <div class="col-8 post">
-              <div class="post-info">
-                <div class="post-profile">
-                  <a href="#">
-                    <img src="/images/pexels-christina-morillo-1181686.jpg" />
-                    <h2>Kimberlee Sabina</h2>
-                  </a>
-                </div>
-                <div class="post-date"><span>05.01.23</span></div>
-              </div>
-
-              <p>
-                People have showed me colors I ain't never seen in a crayon box.
-              </p>
-              <div class="row">
-                <div class="col-2">
-                  <button class="favourite post-icon">
-                    <i class="fa-regular fa-heart"></i>
-                  </button>
-                </div>
-                <div class="col-2">
-                  <button class="Comment post-icon">
-                    <i class="fa-regular fa-comment"></i>
-                  </button>
-                </div>
-                <div class="col-2">
-                  <button class="Share post-icon">
-                    <i class="fa-solid fa-share-nodes"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
+          <img
+            src="./images/pexels-robin-stickel-70497.jpg"
+            class="post-img mt-3"
+            alt="Picture of a bacon cheeseburger and fries."
+          />
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-link post-icons">Left</button>
+            <button type="button" class="btn btn-link post-icons">
+              Middle
+            </button>
+            <button type="button" class="btn btn-link post-icons">Right</button>
           </div>
         </div>
       </div>
     </main>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 footer"><span>Page, 2023©</span></div>
-        </div>
-      </div>
-    </footer>
+
     <script src="./js/hamburger-menu.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
