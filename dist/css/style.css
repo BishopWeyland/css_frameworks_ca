@@ -76,19 +76,18 @@ img {
 
 nav {
   background-color: #e75555;
-  height: 4rem;
 }
 nav i {
   color: white;
 }
-nav .logo i {
+nav .navbar-brand i {
   font-size: 3rem;
 }
-nav .logo {
+nav .navbar-brand {
   color: white;
   font-size: 1.7rem;
 }
-nav .logo span:hover {
+nav .navbar-brand span:hover {
   color: white;
 }
 nav .search-button {

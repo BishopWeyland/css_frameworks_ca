@@ -16,14 +16,15 @@
     <link rel="stylesheet" href="dist/css/style.css" />
   </head>
   <body>
-    <nav class="navbar">
+    <!-- <nav class="navbar">
       <div class="container-fluid">
         <div class="col-4">
           <a class="navbar-brand logo" href="index.html">
             <i class="fa-regular fa-note-sticky"></i> <span>Page.</span>
           </a>
         </div>
-        <!-- <button class="burger-menu"><i class="fa-solid fa-bars"></i></button> -->
+        <button class="burger-menu"><i class="fa-solid fa-bars"></i></button>
+
         <div class="col-4">
           <form class="d-flex" role="search">
             <input
@@ -53,6 +54,55 @@
               <a href="sign-in.html" class="nav-link"
                 ><img src="images/pexels-pixabay-220453.jpg"
               /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="fa-regular fa-note-sticky"></i> <span>Page.</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-regular fa-comments"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-regular fa-bell"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><i class="fa-regular fa-comments"></i
+              ></a>
             </li>
           </ul>
         </div>
