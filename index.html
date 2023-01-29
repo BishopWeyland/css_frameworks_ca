@@ -17,9 +17,11 @@
   </head>
   <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand me-5" href="index.html"
+          ><i class="fa-regular fa-note-sticky me-2"></i><span>Page.</span></a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -33,22 +35,31 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#"
+                ><i class="fa-regular fa-comments me-2"></i>Chat</a
+              >
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#"
+                ><i class="fa-regular fa-bell me-2"></i>Notifications</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="sign-in.html"
+                ><img src="./images/pexels-pixabay-220453.jpg" alt="Profile image of a man with glasses and beard." class="profile-img nav-profile-img me-2"></i>Fraser Moody</a
+              >
             </li>
           </ul>
           <form class="d-flex" role="search">
             <input
-              class="form-control me-2"
+              class="form-control me-2 input-gradient"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
-              Search
+            <button class="btn btn-dark" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
         </div>
@@ -58,19 +69,21 @@
     <!--Main content-->
     <main class="container">
       <div class="row justify-content-center">
-        <div class="col-3">
+        <div class="col-4 d-flex">
+          <img src="./images/pexels-pixabay-220453.jpg" alt="Profile image of a man with glasses and beard." class="profile-img me-3">
           <form>
             <div class="mb-3">
               <input
                 aria-label="Post content"
                 placeholder="What are you thinking about?"
                 type="text"
-                class="form-control"
+                class="form-control input-gradient"
                 id="postContent"
               />
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-dark">Submit</button>
           </form>
+          <i class="fa-regular fa-image ms-3"></i>
         </div>
       </div>
       <h1>Feed</h1>
@@ -84,9 +97,9 @@
                   class="profile-img me-3"
                   alt="Profile picture of a man with a red jacket."
               /></a>
-              <h3 class="d-block">Per Hansen</h3>
+              <h3 class="d-block">Marshall Walter</h3>
             </div>
-            <h3 class="d-block">23.01.2023</h3>
+            <span class="d-block">23.01.2023</span>
           </div>
           <img
             src="./images/pexels-robin-stickel-70497.jpg"
@@ -94,11 +107,15 @@
             alt="Picture of a bacon cheeseburger and fries."
           />
           <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-link post-icons">Left</button>
             <button type="button" class="btn btn-link post-icons">
-              Middle
+              <i class="fa-regular fa-heart"></i>
             </button>
-            <button type="button" class="btn btn-link post-icons">Right</button>
+            <button type="button" class="btn btn-link post-icons">
+              <i class="fa-regular fa-comment"></i>
+            </button>
+            <button type="button" class="btn btn-link post-icons">
+              <i class="fa-solid fa-share"></i>
+            </button>
           </div>
         </div>
       </div>
