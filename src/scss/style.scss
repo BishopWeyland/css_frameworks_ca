@@ -145,6 +145,18 @@ img {
 }
 
 @media (max-width: 767px) {
+  body {
+    font-size: map-get($font-size-mobile, small);
+  }
+
+  h1 {
+    font-size: map-get($font-size-mobile, big);
+  }
+
+  h3 {
+    font-size: map-get($font-size-mobile, medium);
+  }
+
   .column-reverse {
     display: flex;
     flex-direction: column-reverse;
@@ -152,7 +164,12 @@ img {
 
   .scroll-inner {
     display: flex;
+    column-gap: 24px;
     flex-direction: row;
     overflow-x: scroll;
+  }
+
+  .author span {
+    font-size: 10px;
   }
 }
