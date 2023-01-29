@@ -45,7 +45,7 @@ input {
   background-image: -ms-linear-gradient(right, #ffffff 5%, #e9e9e9 100%);
   border-radius: 6px;
   height: 40px;
-  border: 1px solid white;
+  border: 1px solid #e9e9e9;
   padding-left: 10px;
 }
 
@@ -76,6 +76,14 @@ img {
   height: 2rem;
 }
 
+.post-content-input {
+  border: 1px solid white;
+}
+
+.content-post {
+  border-radius: 3px;
+}
+
 .post-container {
   background-color: #fbfbfb;
 }
@@ -94,6 +102,10 @@ img {
 .post-icons {
   font-size: 1.5rem;
   color: #e75555;
+}
+
+.sign-in-container {
+  background-color: #fbfbfb;
 }
 
 /*# sourceMappingURL=style.css.map */
