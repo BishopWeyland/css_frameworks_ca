@@ -99,27 +99,17 @@ nav {
     }
   }
 
-  & .search-button {
-    position: relative;
-    right: 2rem;
-    & i {
-      color: black;
+  .nav-item {
+    & img {
+      height: 40px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: 50%;
     }
-  }
 
-  & .navbar-nav {
-    display: flex;
-    flex-direction: row;
-    color: white;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  & img {
-    height: 40px;
-    width: 40px;
-    object-fit: cover;
-    border-radius: 50%;
+    & span {
+      display: none;
+    }
   }
 }
 
@@ -145,7 +135,7 @@ body {
 
   & img {
     height: 70px;
-    width: 70px;
+    aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 50%;
   }
@@ -266,33 +256,4 @@ body {
 }
 
 @media (max-width: 767px) {
-  .logo {
-    & span {
-      display: none;
-    }
-  }
-
-  .burger-menu {
-    display: block;
-    z-index: 100;
-  }
-
-  .menu {
-    background-color: map-get($colours, primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    width: 100%;
-    height: 100%;
-    transform: translateX(2000px);
-    transition: all 0.5s ease-in-out;
-  }
-
-  .menu-show {
-    transform: translateX(0);
-  }
 }
