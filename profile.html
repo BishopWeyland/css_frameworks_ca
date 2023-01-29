@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | Page</title>
+    <script
+      src="https://kit.fontawesome.com/3f8b4b390b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="dist/css/style.css" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5">
+      <div class="container-fluid">
+        <a class="navbar-brand me-5" href="index.html"
+          ><i class="fa-regular fa-note-sticky me-2"></i><span>Page.</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#"
+                ><i class="fa-regular fa-comments me-2"></i>Chat</a
+              >
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#"
+                ><i class="fa-regular fa-bell me-2"></i>Notifications</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sign-in.html"
+                ><img src="./images/pexels-pixabay-220453.jpg" alt="Profile image of a man with glasses and beard." class="profile-img nav-profile-img me-2"></i>Fraser Moody</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2 input-gradient"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-dark" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--Main content-->
+    <main class="container">
+<div class="col-12 d-flex flex-row align-items-center mb-3">
+  <img src="./images/pexels-pixabay-220453.jpg" alt="Profile image of a man with glasses and beard." class="profile-img profile-image me-4">
+  <h1>Fraser Moody</h1>
+</div>
+      <div class="row profile-container justify-content-between">
+            <div class="col-md-6 col-sm-12 p-3 profile-bg mb-3 ">
+              <h3>About</h3>
+                <ul>
+                  <li class="mb-3"><i class="fa-solid fa-city"></i>
+                    <span>Edinburgh, Scotland</span>
+                  </li>
+                  <li class="mb-3"><i class="fa-solid fa-building-columns"></i>
+                    <span>Student at University of St Andrews</span>
+                  </li>
+                  <li class="mb-3"><i class="fa-solid fa-briefcase"></i>
+                    <span>Working at Starbucks</span>
+                  </li>
+                  <li class="mb-3"><i class="fa-solid fa-palette"></i>
+                    <span>Likes painting, music, books</span>
+                  </li>
+                </ul>
+              </div>
+            <div class="col-md-5 col-sm-12 profile-bg p-3 d-flex flex-row justify-content-center align-items-center mb-3">
+              <form class="d-flex flex-column">
+                <div class="mb-3">
+                  <input
+                    aria-label="Post content"
+                    placeholder="What are you thinking about?"
+                    type="text"
+                    class="form-control input-gradient"
+                    id="postContent"
+                  />
+                </div>
+                <button type="submit" class="btn btn-dark">Submit</button>
+              </form>
+              <i class="fa-regular fa-image ms-3"></i>
+          </div>
+        </div>
+         <div class="row column-reverse justify-content-between">
+            <div class="col-md-6 col-sm-12 p-3 profile-bg  mb-3 ">
+              <div class="row post-container p-md-3 p-sm-2 justify-content-center mb-3">
+        <div class=" content-post mb-5">
+          <div class="author d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex align-items-center">
+              <a href="#">
+                <img
+                  src="./images/pexels-maksim-goncharenok-4775198.jpg"
+                  class="profile-img me-3"
+                  alt="Profile picture of a woman stretching."
+              /></a>
+              <h3 class="d-block">Fannie Merritt</h3>
+            </div>
+            <span class="d-block">29.01.2023</span>
+          </div>
+         <p>Congarts on finishing your assignment!</p>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-link post-icons">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <button type="button" class="btn btn-link post-icons">
+              <i class="fa-regular fa-comment"></i>
+            </button>
+            <button type="button" class="btn btn-link post-icons">
+              <i class="fa-solid fa-share"></i>
+            </button>
+          </div>
+        </div>
+        <!-- post 2 -->
+              <div class=" content-post  mb-5">
+          <div class="author d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex align-items-center">
+           <a href="#">
+                <img
+                  src="./images/pexels-spring-toan-4075524.jpg"
+                  class="profile-img me-3"
+                  alt="Profile picture of a woman with a hat."
+              /></a>
+              <h3 class="d-block">Poppy Boyer</h3>
+            </div>
+            <span class="d-block">19.01.2023</span>
+          </div>
+          <img
+            src="./images/pexels-wendy-wei-1047940.jpg"
+            class="post-img mt-3"
+            alt="Picture a concert."
+          /> <p>Wish you were here!💜</p>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-link post-icons">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <button type="button" class="btn btn-link post-icons">
+              <i class="fa-regular fa-comment"></i>
+            </button>
+            <button type="button" class="btn btn-link post-icons">
+              <i class="fa-solid fa-share"></i>
+            </button>
+          </div>
+        </div>
+        <!-- post 3 -->
+        <div class=" content-post  mb-5">
+          <div class="author d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex align-items-center">
+              <a href="#">
+                <img
+                  src="./images/pexels-maksim-goncharenok-4775198.jpg"
+                  class="profile-img me-3"
+                  alt="Profile picture of a woman stretching."
+              /></a>
+              <h3 class="d-block">Fannie Merritt</h3>
+            </div>
+            <span class="d-block">29.01.2023</span>
+          </div>
+         <p>Congarts on finishing your assignment!</p>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-link post-icons">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <button type="button" class="btn btn-link post-icons">
+              <i class="fa-regular fa-comment"></i>
+            </button>
+            <button type="button" class="btn btn-link post-icons">
+              <i class="fa-solid fa-share"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+            </div>
+            <div class="col-md-5 col-sm-12 profile-bg p-3 d-flex mb-3 flex-column">
+              <div class="d-flex justify-content-between align-items-center contacts-info">
+                <h3 class="d-block">Contacts</h3>
+                <a href="#" class="d-block">See all contacts</a>
+              </div>
+                <div class="scroll-contact">
+                  <ul class="scroll-inner"> 
+                    <li><a href="#"><img src="./images/pexels-arsham-haghani-4298629.jpg" class="profile-img me-3 mb-3" alt="Profile image of woman looking sad.">Rayhan Doyle</a></li>
+                    <li><a href="#"><img src="./images/pexels-emre-keshavarz-3616501.jpg" class="profile-img me-3 mb-3" alt="Profile image of shirtless man in suspenders.">Omar Barrett</a></li>
+                    <li><a href="#"><img src="./images/pexels-ash-valiente-3533228.jpg" class="profile-img me-3 mb-3" alt="Profile image of woman with ballons.">April Luna</a></li>
+                    <li><a href="#"><img src="./images/pexels-maksim-goncharenok-5611966.jpg" class="profile-img me-3 mb-3" alt="Profile image of woman.">Bella Levy</a></li>
+                    <li><a href="#"><img src="./images/pexels-maksim-goncharenok-4775198.jpg" class="profile-img me-3 mb-3" alt="Profile image of a woman stretching.">Fannie Merritt</a></li>
+                    <li><a href="#"><img src="./images/pexels-spring-toan-4075524.jpg" class="profile-img me-3 mb-3" alt="Profile image of a woman with a hat.">Poppy Boyer</a></li>
+                    <li><a href="#"><img src="./images/pexels-creation-hill-1681010.jpg" class="profile-img me-3 mb-3" alt="Profile image of a man wearing a red jacket.">Marshall Walter</a></li>
+                    <li><a href="#"><img src="./images/pexels-charles-1851164.jpg" class="profile-img me-3 mb-3" alt="Profile image of a dog.">Good Boi</a></li>
+                    <li><a href="#"><img src="./images/pexels-arsham-haghani-4298629.jpg" class="profile-img me-3 mb-3" alt="Profile image of woman looking sad.">Rayhan Doyle</a></li>
+                    <li><a href="#"><img src="./images/pexels-emre-keshavarz-3616501.jpg" class="profile-img me-3 mb-3" alt="Profile image of shirtless man in suspenders.">Omar Barrett</a></li>
+                    <li><a href="#"><img src="./images/pexels-ash-valiente-3533228.jpg" class="profile-img me-3 mb-3" alt="Profile image of woman with ballons.">April Luna</a></li>
+                    <li><a href="#"><img src="./images/pexels-maksim-goncharenok-5611966.jpg" class="profile-img me-3 mb-3" alt="Profile image of woman.">Bella Levy</a></li>
+                    <li><a href="#"><img src="./images/pexels-maksim-goncharenok-4775198.jpg" class="profile-img me-3 mb-3" alt="Profile image of a woman stretching.">Fannie Merritt</a></li>
+                    <li><a href="#"><img src="./images/pexels-spring-toan-4075524.jpg" class="profile-img me-3 mb-3" alt="Profile image of a woman with a hat.">Poppy Boyer</a></li>
+                    <li><a href="#"><img src="./images/pexels-creation-hill-1681010.jpg" class="profile-img me-3 mb-3" alt="Profile image of a man wearing a red jacket.">Marshall Walter</a></li>
+                    <li><a href="#"><img src="./images/pexels-charles-1851164.jpg" class="profile-img me-3 mb-3" alt="Profile image of a dog.">Good Boi</a></li>
+                  </ul>
+                </div>
+            </div>
+            
+          </div>
+        
+    </main>
+  <footer>
+      <div class="container d-flex justify-content-center">
+        <div class="row m-1"><span>Page, 2023©</span></div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
