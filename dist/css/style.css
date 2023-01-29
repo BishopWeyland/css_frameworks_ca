@@ -121,10 +121,24 @@ img {
   width: 100%;
 }
 
+.scroll-contact {
+  overflow-y: scroll;
+  max-height: 1050px;
+}
+
+.scroll-inner {
+  height: 100%;
+}
+
 @media (max-width: 767px) {
   .column-reverse {
     display: flex;
     flex-direction: column-reverse;
+  }
+  .scroll-contact {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
   }
 }
 
