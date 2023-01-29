@@ -91,6 +91,9 @@ nav {
   & .logo {
     color: white;
     font-size: 1.7rem;
+    & span:hover {
+      color: white;
+    }
   }
 
   & .search-button {
