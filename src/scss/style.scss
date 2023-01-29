@@ -124,3 +124,19 @@ img {
 .profile-image {
   height: 70px;
 }
+
+.profile-bg {
+  background-color: map-get($colours, secondary);
+  @include b-radius-3;
+}
+
+.contacts-info {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

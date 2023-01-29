@@ -112,4 +112,20 @@ img {
   height: 70px;
 }
 
+.profile-bg {
+  background-color: #fbfbfb;
+  border-radius: 3px;
+}
+
+.contacts-info {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
